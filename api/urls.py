@@ -51,7 +51,7 @@ router.register(r"job_templates", JobTemplateViewSet)
 
 urlpatterns = [
     path("", index_view, name="index"),
-    url(r"^a/", admin.site.urls),
+    path("a/", admin.site.urls),
     path("api/token/", MyTokenObtainPairView.as_view(), name="token_obtain_pair"),
     path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("api/", include(router.urls)),

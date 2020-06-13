@@ -10,3 +10,4 @@ pytz
 requests==2.23.0
 salt-pepper==0.7.5
 whitenoise==5.0.1
+django-extensions==2.2.9

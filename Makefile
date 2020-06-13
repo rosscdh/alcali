@@ -29,4 +29,4 @@ build: build-vue
 		.
 
 push:
-	docker push ${REGISTRY}/${LATEST}
+	docker push ${LATEST}

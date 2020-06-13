@@ -96,7 +96,7 @@
         clipped-left
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title class="font-weight-bold">ALCALI</v-toolbar-title>
+      <v-toolbar-title class="font-weight-bold">BienertIT - Alcali</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-expand-transition>
         <v-text-field

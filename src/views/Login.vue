@@ -21,7 +21,7 @@
                 aspect-ratio="1"
                 style="float: right"
             ></v-img>
-            <h2 class="text-center font-weight-black display-4 mb-8">ALCALI</h2>
+            <h2 class="text-center font-weight-black display-4 mb-8">BienertIT - Alcali</h2>
             <v-card class="elevation-12">
               <v-toolbar
                   color="black"

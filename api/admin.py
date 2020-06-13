@@ -1,6 +1,5 @@
 from django.contrib import admin
-from . models import (FindJobManager,
-                      Jids,
+from . models import (Jids,
                       SaltReturns,
                       SaltEvents,
                       Functions,
@@ -12,11 +11,6 @@ from . models import (FindJobManager,
                       UserSettings,
                       Conformity,)
 
-
-
-@admin.register(FindJobManager)
-class FindJobManagerAdmin(admin.ModelAdmin):
-    pass
 
 @admin.register(Jids)
 class JidsAdmin(admin.ModelAdmin):

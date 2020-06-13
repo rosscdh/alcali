@@ -1,4 +1,4 @@
-PHONY: all build login push run
+PHONY: all build build-vue push run
 
 NAME     := 'rosscdh/alcali'
 TAG      := $$(git log -1 --pretty=%h)
@@ -31,3 +31,6 @@ build: build-vue
 push:
 	docker push ${LATEST}
 	docker push ${VERSION}
+
+run:
+	docker run --rm -it -v ${PWD}/env.sample:/opt/alcali/code/.env  rosscdh/alcali:latest bash

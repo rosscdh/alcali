@@ -12,7 +12,7 @@ BUILD_BRANCH:=$$(git symbolic-ref --short HEAD)
 BUILD_DATE:=$$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
 
-all: build login push
+all: build push
 
 build-vue:
 	docker run --rm -it -v ${PWD}:/src --workdir /src --entrypoint bash node:latest vue-builder.entrypoint.sh
@@ -27,9 +27,6 @@ build: build-vue
 		--build-arg BUILD_DATE=${BUILD_DATE} \
 		--build-arg BUILD_REPO_ORIGIN=${BUILD_REPO_ORIGIN} \
 		.
-
-login:
-	docker login ${REGISTRY}
 
 push:
 	docker push ${REGISTRY}/${LATEST}
